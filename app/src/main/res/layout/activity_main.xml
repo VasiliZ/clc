@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:columnCount="2"
+    android:layout_margin="@dimen/grid_margin"
+    android:layout_marginStart="@dimen/grid_margin"
+    android:orientation="horizontal">
+
+    <EditText
+
+        android:id="@+id/amount_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:inputType="textPersonName"
+        android:hint="@string/amount" />
+
+    <TextView
+        android:id="@+id/percent_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/grid_margin"
+        android:text="@string/tip_percentage"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/percent_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/tip"
+    android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tip_text_view"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cost"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/total_text_view"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cost"
+        android:textSize="18sp" />
+
+</GridLayout>
